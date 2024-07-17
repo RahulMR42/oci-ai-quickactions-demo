@@ -26,8 +26,23 @@ Ready-to-Register models have been tested by Data Science, but the model artifac
 
 ![](images/cm_deploy_advancedoptions.png)
 
+- Wait for the model deployment to complete.
+
+![](images/deploy_progress.png)
+
+- You may use `View in Console` option to see the process in details.
+
+![](images/view_console.png)
+![](images/deploy_details_1.png)
+- It may take several minutes (at least 5 to 7 mnts for a baremetal-based deployment) to complete the deployments
+
+![](images/model_deployment_details.png)
+
+- Please note that you will not be able to view or use the instance directly from the tenancy, as its deployed and securely served from OCI service managed tenancies.Respective GPU count limit will be used from User tenancy and the cost will be charged accordingly.
+
+
 #### Read more 
 [Read more.](https://github.com/oracle-samples/oci-data-science-ai-samples/blob/main/ai-quick-actions/model-deployment-tips.md)
 
 
-[⬅️ Notebooks](notebook.md)[🏠 Back to Home](../README.md) [➡?](deployments.md)
+[⬅️ Notebooks](notebook.md)[🏠 Back to Home](../README.md) [Use a deployed model](use_deployed_model.md)

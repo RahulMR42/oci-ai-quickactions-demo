@@ -4,18 +4,23 @@
 
 ### Procedure to use AI Quick actions.
 
+1. [Validate Service Limits.](docs/limits.md)
+1. [Policies](docs/policies.md)
+1. [Enable Quick action](docs/notebook.md)
+1. [Deploy service curated model.](docs/deployments.md)
+1. [Access a deployed model](docs/use_deployed_model.md)
 
 ### Contributors
 
 Author: [Rahul M R.](https://github.com/RahulMR42)
 
 Last release: Jul 2024
+
 This project is open source. Please submit your contributions by forking this repository and submitting a pull request!  Oracle appreciates any contributions that are made by the open source community.
 
 ### License
 
 Copyright (c) 2024 Oracle and/or its affiliates.
-
 Licensed under the Universal Permissive License (UPL), Version 1.0.
 
 See [LICENSE](LICENSE) for more details.
