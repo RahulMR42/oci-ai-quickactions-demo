@@ -2,16 +2,17 @@
 
 - AI Quick actions needs policies set at the `root` of the tenancies.Ensue the users with which we are executing below steps has necessary permissions to manage dynamic groups and policies  
 - You may use OCI Stack to setup the policies - Details are [here.](https://docs.oracle.com/en-us/iaas/data-science/using/ai-quick-actions-policies.htm#ai-quick-actions-policies-terraform)
+- strongly recommend to use `All policies` option with the RMS Stack.
 
-  - strongly recommend to use `All policies` option with the RMS Stack.
 ![](images/rms_config.png)
-- Or You may set the policies manually - Details are [here.](https://docs.oracle.com/en-us/iaas/data-science/using/ai-quick-actions-policies.htm#ai-quick-actions-manually-add-policies)
+
+- Or You may set the policies manually—Details are [here.](https://docs.oracle.com/en-us/iaas/data-science/using/ai-quick-actions-policies.htm#ai-quick-actions-manually-add-policies)
 - When we use OCI RMS to set the policies, it will create 2 dynamic groups and 2 policies.
 
 ![](images/dgs.png)
 ![](images/policies.png)
 
-- The Policies allows the AI quick actions to access other OCI resources via `resource principal` and allow to have cross tenancy access to consume the curated models from `service tenancies`
+- The Policies allow the AI quick actions to access other OCI resources via `resource principal` and allow to have cross tenancy access to consume the curated models from `service tenancies`
 - Add below policies to one created (either by RMS stack or manual) to allow write access to object-storage for fine-tune operations.
 
 ```shell

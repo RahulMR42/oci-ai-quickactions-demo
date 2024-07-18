@@ -35,7 +35,7 @@ namespace = "OCI BUCKET NAMESPACE"
 - Download the model
 
 ```python
-!huggingface-cli download meta-llama/Meta-Llama-3-8B-Instruct --local-dir llms/${model_prefix} --quiet
+!huggingface-cli download meta-llama/Meta-Llama-3-8B-Instruct --local-dir ${model_prefix} --quiet
 ```
 ![](images/download_from_hf.png)
 
@@ -48,12 +48,49 @@ namespace = "OCI BUCKET NAMESPACE"
 
 - Upload the files to object storage bucket.
 ```shell
-!oci os object bulk-upload --src-dir llms/${model_prefix} --prefix $model_prefix -bn $bucket -ns $namespace --auth "resource_principal"
+!oci os object bulk-upload --src-dir ${model_prefix} --prefix "${model_prefix}/" -bn $bucket -ns $namespace --auth "resource_principal"
 ```
 ![](images/upload_artifacts_to_os.png)
 - Validate the files from object storage bucket.
 
-![](images/bucket_file.png)
+![](images/object-files.png)
+
+- Use `Register from Object Storage`
+
+![](images/register_llm.png)
+
+#### Use `Register verified model`
+
+- Select the model from the list.Select the object storage and provide the path.
+
+![](images/use_register_llm.png)
+
+#### Use `Register unverified model`
+
+- Provide a  `Model name`
+
+![](images/unreg_model.png)
+
+- Select the bucket name and path where the model's artifacts are available.
+
+- Select the desired `Inference container`.
+
+- Optionally click `Enable fine tuning` ,if its supports fine tune.
+
+![](images/unregisteredmodel.png)
+
+- Post the registration the models will be visible under `My models` and can be deployed or use for fine-tune.
+
+#### Read more 
+[Register tips](https://github.com/oracle-samples/oci-data-science-ai-samples/blob/main/ai-quick-actions/register-tips.md)
+
+[⬅️ Deployments](deployments.md)[🏠 Back to Home](../README.md) [➡️ Evaluate the model](evaluations.md)
+
+
+
+
+
+
 
 
 

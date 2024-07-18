@@ -45,4 +45,4 @@ Ready-to-Register models have been tested by Data Science, but the model artifac
 [Read more.](https://github.com/oracle-samples/oci-data-science-ai-samples/blob/main/ai-quick-actions/model-deployment-tips.md)
 
 
-[⬅️ Notebooks](notebook.md)[🏠 Back to Home](../README.md) [Use a deployed model](use_deployed_model.md)
+[⬅️ Notebooks](notebook.md)[🏠 Back to Home](../README.md) [➡️ Register and use models](register_use_model.md)

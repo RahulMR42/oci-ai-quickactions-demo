@@ -38,7 +38,7 @@ The primary method used by AI Quick Action for fine-tuning is Low-Rank Adaptatio
 
 ![](images/fn-progress.png)
 
-- Click `Open logs in terminal` to view the status of the finetune job.Upon clicking it will open a new terminal and provide the job details.
+- Click `Open logs in terminal` to view the status of the finetune job. Upon clicking, it will open a new terminal and provide the job details.
 
 ![](images/fn-progress.png)
 
@@ -46,7 +46,20 @@ The primary method used by AI Quick Action for fine-tuning is Low-Rank Adaptatio
 
 ![](images/accelerate.png)
 
+- Once its finished the model will be available under `Fine-tuned models`
 
+![](images/fn-list-models.png)
+
+- You can refer the Metric panel to validate the training loss.
+
+The accuracy metric reflects the proportion of correct completions made by the model on a given dataset. A higher accuracy indicates that the model is performing well in terms of making correct completions. On the other hand, the loss metric represents the model's error. It quantifies how far the model's completions are from the actual target completions. The goal during training is to minimize this loss function, which typically involves optimizing the model's weights to reduce the error on the training data.
+
+As the training progresses, monitoring both accuracy and loss provides insights into the model's learning dynamics. A decreasing loss alongside increasing accuracy suggests that the model is learning effectively. However, it's important to watch for signs of over-fitting, where the model performs exceptionally well on the training data but fails to generalize to new, unseen data. This can be detected if the validation loss stops decreasing or starts increasing, even as training loss continues to decline.
+
+![](images/epoch_table.png)
+
+#### Read more 
+[Fine-tune tips](https://github.com/oracle-samples/oci-data-science-ai-samples/blob/main/ai-quick-actions/fine-tuning-tips.md)
 
 
 
