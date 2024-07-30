@@ -27,7 +27,7 @@ HUGGINGFACE_TOKEN = "hf_xxxx"
 
 ```python
 model_name = "meta-llama/Meta-Llama-3-8B-Instruct" #LLM PATH
-model_prefix = "metallama38b" # A Prefix
+model_prefix = "metallama38b/" # A Prefix.Dont forget the last / to ensure it comes as a seperate folder
 bucket="OCI BUCKET"
 namespace = "OCI BUCKET NAMESPACE"
 ```
